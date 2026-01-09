@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
+with open("README_en.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
@@ -11,7 +11,7 @@ setup(
     description="NCBI E-utilities MCP server for accessing NCBI databases",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/goki/ncbi-mcp",
+    url="https://github.com/QiGoki/ncbi-mcp",
     packages=find_packages(where="scr"),
     package_dir={"": "scr"},
     classifiers=[
