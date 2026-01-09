@@ -1,1 +1,1 @@
-ncbi-mcp
+ncbi_mcp
