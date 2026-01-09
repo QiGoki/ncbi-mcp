@@ -219,11 +219,11 @@ def efetch(
 
 if __name__ == "__main__":
     term = " USP39 AND (heart OR cardiac)"
-    # db = einfo(retmode="json")["einforesult"]["dblist"]
-    # print("DB:",db)
+    db = einfo(retmode="json",db="pubmed")
+    pprint.pprint(db)
 
-    idList = esearch(term=term,retmax=5,retmode="json")["esearchresult"]["idlist"]
-    print("IDS:",idList)
+    # idList = esearch(term=term,retmax=5,retmode="json")["esearchresult"]["idlist"]
+    # print("IDS:",idList)
 
     # summary = esummary(ids=idList,retmode="json")
     # pprint.pprint(summary)
