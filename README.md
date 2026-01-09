@@ -1,6 +1,6 @@
 # NCBI E-utilities MCP 服务器
 
-用于访问 NCBI E-utilities API 的机器能力协议（MCP）服务器。该包提供对 NCBI 数据库（包括 PubMed、Protein、Nucleotide 等）的程序化访问。
+用于访问 NCBI E-utilities API 的MCP服务器。该包提供对 NCBI 数据库（包括 PubMed、Protein、Nucleotide 等）的程序化访问。
 
 ## 功能特性
 
@@ -11,7 +11,7 @@
 
 ## 连接到您的 MCP 客户端
 
-您可以使用npx命令从本地 MCP 客户端连接到您的 NCBI MCP 服务器。
+您可以使用uvx命令从本地 MCP 客户端连接到您的 NCBI MCP 服务器。
 
 要从 Claude Desktop 或其他兼容 MCP 的客户端连接到您的 MCP 服务器，请按照 MCP 客户端设置指南并更新客户端配置。
 
@@ -23,12 +23,11 @@
     "ncbi-mcp": {
       "command": "uvx",
       "args": [
-        "run",
         "ncbi-mcp"
       ],
       "env": {
         "API_KEY": "YOUR_NCBI_API_KEY"
-      },
+      }
     }
   }
 }
