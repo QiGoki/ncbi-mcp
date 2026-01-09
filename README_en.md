@@ -1,6 +1,6 @@
 # NCBI E-utilities MCP Server
 
-A Machine Capability Protocol (MCP) server for accessing NCBI E-utilities API. This package provides programmatic access to NCBI databases including PubMed, Protein, Nucleotide, and more.
+A Machine Capability MCP for accessing NCBI E-utilities API. This package provides programmatic access to NCBI databases including PubMed, Protein, Nucleotide, and more.
 
 ## Features
 
@@ -11,7 +11,7 @@ A Machine Capability Protocol (MCP) server for accessing NCBI E-utilities API. T
 
 ## Connect to Your MCP Client
 
-You can use the npx command to connect to your NCBI MCP server from local MCP clients.
+You can use the uvx command to connect to your NCBI MCP server from local MCP clients.
 
 To connect to your MCP server from Claude Desktop or other MCP-compatible clients, follow the MCP client setup guide and update the client configuration.
 
@@ -23,12 +23,11 @@ Update your MCP client configuration with this configuration:
     "ncbi-mcp": {
       "command": "uvx",
       "args": [
-        "run",
         "ncbi-mcp"
       ],
       "env": {
         "API_KEY": "YOUR_NCBI_API_KEY"
-      },
+      }
     }
   }
 }
